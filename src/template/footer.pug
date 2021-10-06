@@ -1,2 +1,117 @@
+- var vkLogo = require("!!svg-inline-loader!../asset/vk-svgrepo-com.svg")
+- var fbLogo = require("!!svg-inline-loader!../asset/facebook-social-logo-svgrepo-com.svg")
+- var okLogo = require("!!svg-inline-loader!../asset/odnoklassniki-logo-svgrepo-com.svg")
+- var tgLogo = require("!!svg-inline-loader!../asset/telegram-svgrepo-com.svg");
+- var ytLogo = require("!!svg-inline-loader!../asset/youtube-svgrepo-com.svg")
+- var igLogo = require("!!svg-inline-loader!../asset/instagram-svgrepo-com.svg")
+- var twLogo = require("!!svg-inline-loader!../asset/twitter-svgrepo-com.svg")
+- var uk = require("!!svg-inline-loader!../asset/uk.svg")
+
+hr.divider
 footer
-  h1 my example footer
+  .footer-upper
+    .tinkoff
+      a(href="https://www.tinkoff.ru/") Тинькофф
+      a.telno(href="tel:88005557778") 8 800 555-77-78
+    .about
+      ul.about-list
+        li
+          a(href="https://www.tinkoff.ru/about/") О банке
+        li
+          a(href="https://www.tinkoff.ru/about/news/") Новости
+        li
+          a(href="https://www.tinkoff.ru/career/") Работа
+        li
+          a(href="https://www.tinkoff.ru/maps/payment/?partner=TINKOFF") Точки пополнения
+        li
+          a(href="https://www.tinkoff.ru/maps/atm/?partner=tcs") Банкоматы
+        li
+          a(href="https://www.tinkoff.ru/about/exchange/") Курсы валют
+        li
+          a(href="https://www.tinkoff.ru/contacts/") Контакты
+        li
+          a(href="https://help.tinkoff.ru/?_ga=2.19686257.810188987.1633503903-1986941792.1633503903") Помощь
+        li
+          a(href="https://www.tinkoff.ru/secure/") Безопасность
+        li
+          a(href="https://www.tinkoff.ru/secure/") For Investors
+      span Для звонков по россии
+  .footer-rest
+    .footer-rest-container
+      ul.services
+        li
+          include services-bank.pug
+        li
+          include services-business.pug
+        li
+          include services-invest.pug
+        li
+          include services-insurance.pug
+        li
+          include services-travel.pug
+        li
+          include services-entertainment.pug
+      .info
+        h4 ИНФОРМАЦИЯ
+        ul.info-sources
+          li
+            p 
+              a(href="https://acdn.tinkoff.ru/static/documents/about-slkpkosvnrvub.pdf?_ga=2.86200145.810188987.1633503903-1986941792.1633503903") Информация о лицах, под контролем которых находится банк (информация о лицах, под контролем либо значительным влиянием которых находится кредитная организация соответствует информации, направленной в Банк России для размещения на официальном сайте Банка России 12.05.2021 г.)
+          li
+            p 
+              a(href="https://e-disclosure.ru/portal/company.aspx?id=2989") Центр раскрытия корпоративной информации
+          li 
+            p 
+              a(href="https://www.tinkoff.ru/about/documents/#psv") Информация о процентных ставках по договорам банковского вклада с физическими лицами
+          li 
+            p 
+              a(href="https://www.tinkoff.ru/about/documents/disclosure/") Раскрытие информации профессиональным участником рынка ценных бумаг
+          li 
+            p
+              a(href="https://www.tinkoff.ru/about/news/06102016-tinkoff-named-the-largest-digital-bank-RUS/") Самый большой онлайн-банк в мире
+          li 
+            p
+              a(href="https://www.tinkoff.ru/about/terms-changes-news/") Новости об изменении условий продуктов и сервисов Банка
+          li 
+            p 
+              a(href="https://www.tinkoff.ru/about/sitemap/") Карта сайта
+          li
+            p 
+              a(href="https://acdn.tinkoff.ru/static/documents/remote-service-limitations.pdf?_ga=2.86200145.810188987.1633503903-1986941792.1633503903") Ограничения Дистанционного обслуживания
+          li
+            p 
+              a(href="https://www.tinkoff.ru/cards/debit-cards/tinkoff-black/?dco_ic=2108fb85-26bc-11ec-8000-000028f4f3d1") Удаленная идентификация
+          li 
+            p 
+              a(href="https://acdn.tinkoff.ru/static/documents/information-features-conditions-credit-breaks.pdf?_ga=2.86200145.810188987.1633503903-1986941792.1633503903") Кредитные каникулы
+      hr.divider
+      .info-misc
+        p.award Best Digital Bank Award 2020 — по версии журнала Global Finance (Глобал Финанс) 2020г. по критериям: стратегия онлайн привлечения и обслуживания клиентов, успешное привлечение клиентов с помощью цифровых предложений, рост клиентов, ассортимент продуктов, получение выгоды от цифровых инициатив, дизайн сайта и его функциональность.
+        p.coockies-notice 
+          | АО «Тинькофф Банк» 
+          a.privacy(href="https://www.tinkoff.ru/privacy/") использует файлы «cookie»
+          | , с целью персонализации сервисов и повышения удобства пользования веб-сайтом. «Cookie» представляют собой небольшие файлы, содержащие информацию о предыдущих посещениях веб-сайта. Если вы не хотите использовать файлы «cookie», измените настройки браузера.
+      hr.divider
+      .footer-bottom
+        .legal
+          | © 2006—2021, АО «Тинькофф Банк», официальный сайт, лицензия ЦБ РФ № 2673
+        .right
+          ul.social-media
+            li 
+              a !{vkLogo}
+            li 
+              a !{fbLogo}
+            li 
+              a !{okLogo}
+            li 
+              a !{twLogo}
+            li 
+              a !{ytLogo}
+            li 
+              a !{igLogo}
+            li 
+              a !{tgLogo}
+          .language
+            a 
+              | English
+              .uk !{uk}
