@@ -1,5 +1,15 @@
+:root {
+  // --light-grey: #757575;
+  --lighter-grey: rgba(0,0,0,0.2);
+  --light-grey: rgba(0,0,0,0.6);
+  --navy-blue: #336FEE;
+  // --dark-grey: #333333;
+  --dark-grey: rgba(0,0,0,0.8);
+}
+
 html {
   font-size: 16px;
+  font-family: arial, sans-serif;
 }
 
 body {
@@ -9,3 +19,8 @@ body {
 *, *::after, *::before {
   box-sizing: border-box;
 }
+
+
+@import "./header.scss";
+@import "./main.scss";
+@import "./footer.scss";

@@ -2,6 +2,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 const index = {
   template: "./src/template/index.pug",
   filename: "index.html",
@@ -36,14 +38,16 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin(index),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin()
   ],
   module: {
     rules: [
       {
         test: /\.s(a|c)ss$/i,
         use: [
-          "style-loader",
+          // "style-loader",
+          MiniCssExtractPlugin.loader,
           "css-loader",
           "sass-loader"
         ]
@@ -51,7 +55,8 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [
-          "style-loader",
+          // "style-loader",
+          MiniCssExtractPlugin.loader,
           "css-loader",
         ]
       },
@@ -59,6 +64,18 @@ module.exports = {
         test: /\.pug$/i,
         use: "pug-loader",
       },
+      // {
+      //   test: /\.svg$/i,
+      //   use: "file-loader",
+      //   // use: [
+      //   //   {
+      //   //     loader: "file-loader",
+      //   //     // options: {
+      //   //     //   esModule: false
+      //   //     // }
+      //   //   },
+      //   // ]
+      // },
     ]
   }
 }

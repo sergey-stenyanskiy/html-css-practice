@@ -1,0 +1,174 @@
+:root {
+  --menu-line-height: 60px;
+}
+  
+
+nav {
+  font-size: 0.82em;
+  width: 1080px;
+  margin: auto;
+}
+
+.navigation-menu a, .submenu a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-menu, .submenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-item {
+  margin-right: 20px;
+  display: block;
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s ease-in-out;
+
+  position: relative;
+}
+
+.menu-item > a {
+  display: block;
+  height: 100%;
+
+  line-height: var(--menu-line-height);
+  color: var(--light-grey);
+}
+
+.logo {
+  display: block;
+}
+
+.menu-item:hover {
+  border-bottom: 2px solid var(--lighter-grey);
+}
+
+.menu-item:hover a {
+  color: var(--dark-grey);
+}
+
+.menu-item.selected {
+  border-bottom: 2px solid var(--dark-grey);
+}
+
+.menu-item.selected a {
+  color: var(--dark-grey);
+}
+
+.dropdown {
+  position: absolute;
+  width: 120px;
+  
+  transition: all 0.15s ease-in;
+  opacity: 0;
+  top: 72px;
+  
+  z-index: 100;
+}
+
+.dropdown-content {
+  padding: 8px 0;
+  border: 1px solid var(--lighter-grey);
+  border-radius: 4px;
+  list-style-type: none;
+  background: white;
+  
+  box-shadow: 2px 10px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown .transparent-block {
+  height: 8px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.dropdown-item {
+  line-height: 30px;
+}
+
+.dropdown-item:hover {
+  background-color: #F6F7F8;
+}
+
+.dropdown-item a {
+  display: block;
+  margin: auto; 
+  color: black;
+  text-align: start;
+  padding: 0 8px;
+}
+
+.dropdown-item:hover a {
+  color: #2670CF;
+}
+
+.menu-item:hover .dropdown {
+  display: block;
+  opacity: 1;
+  top: 62px;
+}
+
+.navitem:last-child {
+  margin-right: 0px;
+}
+
+.logo {
+  background: url("../asset/logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 34px;
+  margin-right: 40px;
+}
+
+.divider {
+  margin: 0;
+  border: none;
+  border-top : thin solid #DDDFE0;
+
+  background-color: #DDDFE0;
+  color: #DDDFE0;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login {
+  display: block;
+  color: var(--navy-blue);
+  text-decoration: none;
+  line-height: var(--menu-line-height);
+
+  transition: color 0.15s ease-in;
+}
+
+.login:hover {
+  color: var(--dark-grey);
+}
+
+.login > * {
+  vertical-align: middle;
+}
+
+.login-icon {
+  display: inline-block;
+
+  margin-left: 4px;
+}
+
+.login-icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
