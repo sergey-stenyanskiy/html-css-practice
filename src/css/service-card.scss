@@ -1,0 +1,92 @@
+// :root {
+//     --blue-grey: #ECF1F7;
+//     --blue-grey-darker: #E4EBF3;
+//   }
+
+
+
+.service-card {
+  position: relative;
+  width: var(--service-card-width);
+  margin-right: var(--service-card-margin);
+
+  margin-top: 48px;
+  background: white;
+
+  padding: 32px;
+
+  transition: all 0.2s ease-in;
+  top: 0;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card.w100 {
+  width: 100%;
+  margin-right: 0;
+}
+
+.service-card:hover {
+  top: -3px;
+  box-shadow: 0px 0px 24px rgba(0,0,0,0.2);
+}
+
+.service-card:nth-child(2n) {
+  margin-right: 0;
+}
+
+.service-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.service-card-left-block {
+  flex-basis: 85%;
+}
+
+.service-card-right-block {
+  margin-left: 2%;
+  flex-basis: 13%;
+}
+
+
+.service-card-header {
+  margin: 20px 0;
+  font-weight: normal;
+  margin-top: 0;
+
+  // color: black;
+}
+
+.service-card-content p {
+  line-height: 1.65em;
+  font-size: 0.85em;
+  margin: 20px 0;
+  height: 45px;
+}
+
+.service-card-action {
+  text-decoration: none;
+  font-size: 0.85em;
+  
+  color: var(--navy-blue);
+  transition: border-color 0.2s ease-in;
+}
+
+.service-card-action:hover {
+  border-color: var(--marine-blue);
+}
+
+.service-card-stretched-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}

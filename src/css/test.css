@@ -1,0 +1,20 @@
+.service-card-mobile-apps {
+    background-image: url("../asset/tinkoff-mobile-apps.png");
+    background-color: white;
+  }
+  
+  .interesting-card-jobs {
+    background-image: url("../asset/tinkoff-jobs.png");
+  }
+  
+  .interesting-card-education {
+    background-image: url("../asset/tinkoff-education.png");
+  }
+  
+  .interesting-card-magazine {
+    background-image: url("../asset/tinkoff-magazine.png");
+  }
+  
+  .interesting-card-all-products {
+    background-image: url("../asset/tinkoff-all-products.png") ;
+  }

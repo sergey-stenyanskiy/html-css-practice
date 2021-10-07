@@ -1,9 +1,10 @@
 :root {
-  // --light-grey: #757575;
+  --extralight-grey: rgba(0,0,0,0.1);
   --lighter-grey: rgba(0,0,0,0.4);
   --light-grey: rgba(0,0,0,0.6);
   --navy-blue: #336FEE;
   --dark-grey: rgba(0,0,0,0.8);
+  --darkest-grey: rgba(0,0,0,0.8);
   --marine-blue: #1F50BA;
 }
 
@@ -14,13 +15,21 @@ html {
 
 body {
   margin: 0;
+  min-width: fit-content;
 }
 
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
+hr.divider {
+  margin: 0;
+  border: none;
+  border-top : thin solid var(--extralight-grey);
+}
+
 
 @import "./header.scss";
 @import "./main.scss";
+
 @import "./footer.scss";

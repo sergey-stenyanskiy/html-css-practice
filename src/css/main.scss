@@ -1,0 +1,132 @@
+$product-card-count: 3;
+$trust-card-count: 2;
+$service-card-count: 2;
+$interesting-card-count: 2;
+
+main {
+  --container-width: 1080px;
+  --product-card-margin: 48px;
+  --product-card-width: calc((var(--container-width) - #{$product-card-count - 1} * var(--product-card-margin)) / #{$product-card-count});
+  
+  --trust-card-margin: 48px;
+  --trust-card-width: calc((var(--container-width) - #{$trust-card-count - 1} * var(--trust-card-margin)) / #{$trust-card-count});
+  
+  --service-card-margin: 48px;
+  --service-card-width: calc((var(--container-width) - #{$service-card-count - 1} * var(--service-card-margin)) / #{$service-card-count});
+  
+  --interesting-card-margin: 48px;
+  --interesting-card-width: calc((var(--container-width) - #{$interesting-card-count - 1} * var(--interesting-card-margin)) / #{$interesting-card-count});
+}
+
+main {
+  color: var(--darkest-grey);
+}
+
+
+
+@import "./product-card.scss";
+@import "./trust-card.scss";
+@import "./service-card.scss";
+@import "./interesting-card.scss";
+
+.splash {
+  display: block;
+  text-decoration: none;
+  color: var(--darkest-grey);
+
+  background: #F5F5F6;
+}
+
+
+.splash-content {
+  background: url("../asset/tinkoff-splash.png") no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  height: 480px;
+
+  width: 1080px;
+  margin: auto;
+}
+
+.offer {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.offer h1 {
+  margin: 0;
+  padding: 28px 0;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.tough-choice {
+  margin-bottom: 200px;
+  line-height: 1.65em;
+}
+
+.offer-button {
+  display: inline-block;
+  background: #FFDD2D;
+  color: var(--darkest-grey);
+  padding: 18px 28px;
+  border-radius: 4px;
+  margin-bottom: 48px;
+
+  transition: all 0.2s ease-in;
+}
+
+.offer-button:hover {
+  background: #FCC521;
+}
+
+.content {
+  width: 1080px;
+  margin: auto;
+}
+
+.products-items, .trust-items, .services-items, .interesting-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.services {
+  background: #F5F5F6;
+}
+
+.services-content {
+  width: 1080px;
+  margin: auto;
+}
+
+.interesting-content {
+  width: 1080px;
+  margin: auto;
+}
+
+// .service-card-mobile-apps {
+//   // background: url("/./src/asset/tinkoff-mobile-apps.png") white;
+//   background-image: url("../asset/tinkoff-mobile-apps.png");
+//   background-color: white;
+// }
+
+// .interesting-card-jobs {
+//   background-image: url("../asset/tinkoff-jobs.png");
+// }
+
+// .interesting-card-education {
+//   background-image: url("../asset/tinkoff-education.png");
+// }
+
+// .interesting-card-magazine {
+//   background-image: url("../asset/tinkoff-magazine.png");
+// }
+
+// .interesting-card-all-products {
+//   background-image: url("../asset/tinkoff-all-products.png") ;
+// }

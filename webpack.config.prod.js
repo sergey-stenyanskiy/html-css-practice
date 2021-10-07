@@ -11,26 +11,14 @@ const index = {
 }
 
 module.exports = {
-  mode: "development",
-  // mode: "production",
-  devtool: "source-map",
+  mode: "production",
   entry: {
     index: "./src/index.js"
   },
   output: {
-    publicPath: "/",
+    publicPath: "./",
     path: path.join(__dirname, "dist"),
     filename: "[name].bundle.js"
-  },
-  devServer: {
-    host: "localhost",
-    port: 8080,
-    devMiddleware: {
-      writeToDisk: true
-    },
-    historyApiFallback: {
-      index: "/"
-    }
   },
   optimization: {
     splitChunks: {
@@ -48,44 +36,17 @@ module.exports = {
         test: /\.s(a|c)ss$/i,
         use: [
           // "style-loader",
-          // MiniCssExtractPlugin.loader,
-          {
-            loader: MiniCssExtractPlugin.loader, 
-          },
-          {
-            loader: "css-loader",
-            options: {
-              // url: false
-            } 
-          },
-          {
-            loader: 'resolve-url-loader',
-            options: {
-              attempts: 1,
-              sourceMap: true
-            }
-          },
-          {
-            loader: "sass-loader"
-          }
-          // "css-loader",
-          // "sass-loader"
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader"
         ]
       },
       {
         test: /\.css$/i,
         use: [
           // "style-loader",
-          {
-            loader: MiniCssExtractPlugin.loader, 
-          },
-          {
-            loader: "css-loader",
-            options: {
-              // url: false,
-              // url: true
-            } 
-          }
+          MiniCssExtractPlugin.loader,
+          "css-loader",
         ]
       },
       {

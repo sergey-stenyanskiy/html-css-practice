@@ -1,0 +1,68 @@
+// :root {
+//     --blue-grey: #ECF1F7;
+//     --blue-grey-darker: #E4EBF3;
+//   }
+
+.trust-card {
+  position: relative;
+  width: var(--trust-card-width);
+  margin-right: var(--trust-card-margin);
+
+  margin-top: 48px;
+  color: var(--darkest-grey);
+  
+}
+
+.trust-card:nth-child(2n) {
+  margin-right: 0;
+}
+
+
+.trust-card a {
+  text-decoration: none;
+}
+
+.trust-card-image {
+  display: block;
+  width: 100%;
+  background: #959BA4;
+}
+
+.trust-card-header {
+  margin: 20px 0;
+  font-weight: normal;
+  margin-top: 0;
+
+  color: var(--darkest-grey);
+  transition: color 0.2s ease-in;
+}
+
+.trust-card-content {
+  padding: 32px;
+  background: #F5F5F6;
+}
+
+.trust-card-content p {
+  line-height: 1.65em;
+  font-size: 0.85em;
+  margin: 20px 0;
+  height: 45px;
+}
+
+.trust-card-action-button {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 4px;
+  color: var(--navy-blue);
+  font-size: 0.85em;
+  
+  transition: border-color 0.2s ease-in;
+
+  position: relative;
+  border: 1px solid var(--navy-blue);
+  background-color: #F5F5F6;
+}
+
+.trust-card-action-button:hover {
+  border-color: var(--marine-blue);
+}

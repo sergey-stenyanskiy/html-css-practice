@@ -1,5 +1,6 @@
 - var vkLogo = require("!!svg-inline-loader!../asset/vk-svgrepo-com.svg")
-- var fbLogo = require("!!svg-inline-loader!../asset/facebook-social-logo-svgrepo-com.svg")
+//- - var fbLogo = require("!!svg-inline-loader!../asset/facebook-social-logo-svgrepo-com.svg")
+- var fbLogo = require("!!svg-inline-loader!../asset/fb.svg")
 - var okLogo = require("!!svg-inline-loader!../asset/odnoklassniki-logo-svgrepo-com.svg")
 - var tgLogo = require("!!svg-inline-loader!../asset/telegram-svgrepo-com.svg");
 - var ytLogo = require("!!svg-inline-loader!../asset/youtube-svgrepo-com.svg")
@@ -16,29 +17,29 @@ footer
     .about
       ul.about-list
         li
-          a(href="https://www.tinkoff.ru/about/") О банке
+          a.regular-link(href="https://www.tinkoff.ru/about/") О банке
         li
-          a(href="https://www.tinkoff.ru/about/news/") Новости
+          a.regular-link(href="https://www.tinkoff.ru/about/news/") Новости
         li
-          a(href="https://www.tinkoff.ru/career/") Работа
+          a.regular-link(href="https://www.tinkoff.ru/career/") Работа
         li
-          a(href="https://www.tinkoff.ru/maps/payment/?partner=TINKOFF") Точки пополнения
+          a.regular-link(href="https://www.tinkoff.ru/maps/payment/?partner=TINKOFF") Точки пополнения
         li
-          a(href="https://www.tinkoff.ru/maps/atm/?partner=tcs") Банкоматы
+          a.regular-link(href="https://www.tinkoff.ru/maps/atm/?partner=tcs") Банкоматы
         li
-          a(href="https://www.tinkoff.ru/about/exchange/") Курсы валют
+          a.regular-link(href="https://www.tinkoff.ru/about/exchange/") Курсы валют
         li
-          a(href="https://www.tinkoff.ru/contacts/") Контакты
+          a.regular-link(href="https://www.tinkoff.ru/contacts/") Контакты
         li
-          a(href="https://help.tinkoff.ru/?_ga=2.19686257.810188987.1633503903-1986941792.1633503903") Помощь
+          a.regular-link(href="https://help.tinkoff.ru/?_ga=2.19686257.810188987.1633503903-1986941792.1633503903") Помощь
         li
-          a(href="https://www.tinkoff.ru/secure/") Безопасность
+          a.regular-link(href="https://www.tinkoff.ru/secure/") Безопасность
         li
-          a(href="https://www.tinkoff.ru/secure/") For Investors
+          a.regular-link(href="https://www.tinkoff.ru/secure/") For Investors
       span Для звонков по россии
   .footer-rest
     .footer-rest-container
-      ul.services
+      ul.services-more
         li
           include services-bank.pug
         li
@@ -52,7 +53,7 @@ footer
         li
           include services-entertainment.pug
       .info
-        h4 ИНФОРМАЦИЯ
+        h4 Информация
         ul.info-sources
           li
             p 
@@ -87,9 +88,9 @@ footer
       hr.divider
       .info-misc
         p.award Best Digital Bank Award 2020 — по версии журнала Global Finance (Глобал Финанс) 2020г. по критериям: стратегия онлайн привлечения и обслуживания клиентов, успешное привлечение клиентов с помощью цифровых предложений, рост клиентов, ассортимент продуктов, получение выгоды от цифровых инициатив, дизайн сайта и его функциональность.
-        p.coockies-notice 
+        p.cookies-notice 
           | АО «Тинькофф Банк» 
-          a.privacy(href="https://www.tinkoff.ru/privacy/") использует файлы «cookie»
+          a.privacy.regular-link(href="https://www.tinkoff.ru/privacy/") использует файлы «cookie»
           | , с целью персонализации сервисов и повышения удобства пользования веб-сайтом. «Cookie» представляют собой небольшие файлы, содержащие информацию о предыдущих посещениях веб-сайта. Если вы не хотите использовать файлы «cookie», измените настройки браузера.
       hr.divider
       .footer-bottom
