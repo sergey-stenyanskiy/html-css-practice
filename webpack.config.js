@@ -12,7 +12,6 @@ const index = {
 
 module.exports = {
   mode: "development",
-  // mode: "production",
   devtool: "source-map",
   entry: {
     index: "./src/index.js"
@@ -48,42 +47,25 @@ module.exports = {
         test: /\.s(a|c)ss$/i,
         use: [
           // "style-loader",
-          // MiniCssExtractPlugin.loader,
-          {
-            loader: MiniCssExtractPlugin.loader, 
-          },
+          MiniCssExtractPlugin.loader, 
           {
             loader: "css-loader",
             options: {
-              // url: false
+              esModule: false
             } 
           },
-          {
-            loader: 'resolve-url-loader',
-            options: {
-              attempts: 1,
-              sourceMap: true
-            }
-          },
-          {
-            loader: "sass-loader"
-          }
-          // "css-loader",
-          // "sass-loader"
+          "sass-loader"
         ]
       },
       {
         test: /\.css$/i,
         use: [
           // "style-loader",
-          {
-            loader: MiniCssExtractPlugin.loader, 
-          },
+          MiniCssExtractPlugin.loader, 
           {
             loader: "css-loader",
             options: {
-              // url: false,
-              // url: true
+              esModule: false
             } 
           }
         ]
@@ -94,7 +76,6 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|webp)$/i,
-        // include: path.join(__dirname, 'src/asset'),
         use: {
           loader: "file-loader",
           options: {

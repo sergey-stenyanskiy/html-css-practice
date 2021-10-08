@@ -35,18 +35,26 @@ module.exports = {
       {
         test: /\.s(a|c)ss$/i,
         use: [
-          // "style-loader",
-          MiniCssExtractPlugin.loader,
-          "css-loader",
+          MiniCssExtractPlugin.loader, 
+          {
+            loader: "css-loader",
+            options: {
+              esModule: false
+            } 
+          },
           "sass-loader"
         ]
       },
       {
         test: /\.css$/i,
         use: [
-          // "style-loader",
-          MiniCssExtractPlugin.loader,
-          "css-loader",
+          MiniCssExtractPlugin.loader, 
+          {
+            loader: "css-loader",
+            options: {
+              esModule: false
+            } 
+          }
         ]
       },
       {
@@ -55,7 +63,6 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|webp)$/i,
-        // include: path.join(__dirname, 'src/asset'),
         use: {
           loader: "file-loader",
           options: {

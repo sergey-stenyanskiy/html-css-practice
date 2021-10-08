@@ -1,6 +1,7 @@
 footer {
   font-size: 0.8em;
   color: var(--lighter-grey);
+  margin-top: 72px;
 }
 
 footer a {
@@ -23,9 +24,12 @@ footer a {
   align-items: baseline;
 }
 
+.tinkoff a {
+  color: var(--darkest-grey);
+}
+
 .telno {
   color: black;
-  font-weight: bold;
   font-size: 1.4em;
 }
 
@@ -55,10 +59,10 @@ footer a {
 }
 
 .footer-rest {
-  background-image: url("../asset/emblem.svg");
+  background-image: url("!!file-loader!../../asset/emblem.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F6F7F8;
+  background-color: var(--tinkoff-grey);
 }
 
 .footer-rest a {
@@ -67,7 +71,7 @@ footer a {
 }
 
 .footer-rest a:hover {
-  color: var(--dark-grey);
+  color: var(--darkest-grey);
 }
 
 .footer-rest-container {

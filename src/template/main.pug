@@ -1,5 +1,4 @@
-- var transfersIcon = require("!!svg-inline-loader!../asset/tinkoff-transfers.svg")
-- var withdrawIcon = require("!!svg-inline-loader!../asset/tinkoff-withdraw.svg")
+
 main
   a.splash(href="https://www.tinkoff.ru/cards/credit-cards/and-debit-cards/2/?internal_source=home_main_block_test")
     .splash-content
@@ -12,135 +11,9 @@ main
             | с доходом. А может быть обе?
         div
           .offer-button Выбрать карты
-  .content
-    .products
-      h2 Рекомендуемые продукты
-      .products-items
-        .product-card
-          img.product-card-image(src=require("../asset/tinkoff-casco.png"))
-          h3.product-card-header Страхование КАСКО
-          p.product-card-content Дотавка за день. Ремонт стёкол, фар и зеркал без справок
-          a(href="https://www.tinkoff.ru/insurance/kasko/?internal_source=home_slider_block_button#form").product-card-action-button Рассчитать стоимость
-          a(href="https://www.tinkoff.ru/insurance/kasko/?internal_source=home_slider_block").product-card-stretched-link
-        .product-card
-          img.product-card-image(src=require("../asset/tinkoff-osago.png"))
-          h3.product-card-header Страхование ОСАГО
-          p.product-card-content Электронный полис со скидками за безаварийнойсть
-          a(href="https://www.tinkoff.ru/insurance/osago/?internal_source=home_slider_block_button#form").product-card-action-button Рассчитать стоимость
-          a(href="https://www.tinkoff.ru/insurance/osago/?internal_source=home_slider_block").product-card-stretched-link
-        .product-card
-          img.product-card-image(src=require("../asset/tinkoff-invest.png"))
-          h3.product-card-header Инвестиции
-          p.product-card-content 
-            | Советы по выбору акций 
-            br
-            | и удобное приложение
-          a(href="https://www.tinkoff.ru/invest/?internal_source=home_slider_block_button#form-application").product-card-action-button Стать инвестором
-          a(href="https://www.tinkoff.ru/invest/?internal_source=home_slider_block").product-card-stretched-link
-        .product-card
-          img.product-card-image(src=require("../asset/tinkoff-our-best-cards.png"))
-          h3.product-card-header Выбирайте из наших лучших карт
-          p.product-card-content Кредитная карта с лимитом или дебетовая с доходом. А может быть обе?
-          a(href="https://www.tinkoff.ru/cards/credit-cards/and-debit-cards/2/?internal_source=home_slider_block_button_test").product-card-action-button Оформить карту
-          a(href="https://www.tinkoff.ru/cards/credit-cards/and-debit-cards/2/?internal_source=home_slider_block_test").product-card-stretched-link
-        .product-card
-          img.product-card-image(src=require("../asset/tinkoff-business.png"))
-          h3.product-card-header Счёт для бизнеса
-          p.product-card-content До 4% на остаток и до 4 месяцев бесплатно. Всё онлайн
-          a(href="https://www.tinkoff.ru/business/account/?internal_source=home_slider_block_button#form").product-card-action-button Открыть счёт
-          a(href="https://www.tinkoff.ru/business/account/?internal_source=home_slider_block").product-card-stretched-link
-        .product-card
-          img.product-card-image(src=require("../asset/tinkoff-credit.png"))
-          h3.product-card-header Кредит наличными
-          p.product-card-content До 15 млн рублей на следующий день. От 5.9% годовых
-          a(href="https://www.tinkoff.ru/loans/cash-loan/?internal_source=home_slider_block_button#form").product-card-action-button Получить
-          a(href="https://www.tinkoff.ru/loans/cash-loan/?internal_source=home_slider_block").product-card-stretched-link
-      h2 Нам доверяют более 14 млн клиентов
-      .trust-items
-        .trust-card
-          img.trust-card-image(src=require("../asset/tinkoff-3rd.png"))
-          .trust-card-content
-            h3.trust-card-header Третий банк России по количеству клиентов
-            p По исследованиям АО «Делойт и ТУШ СНГ», АО «НЭО Центр» и Frost &amp; Sullivan за 2020 г.
-            a(href="https://www.tinkoff.ru/about/news/06102020-tinkoff-the-third-largest-bank-in-russia-number-of-clients/?internal_source=home_button").trust-card-action-button Подробнее
-        .trust-card
-          img.trust-card-image(src=require("../asset/tinkoff-best-worldwide.png"))
-          .trust-card-content
-            h3.trust-card-header Лучший мобильный банк в мире
-            p По версии Global Finance — Best Digital Bank Award 2020
-            a(href="https://www.tinkoff.ru/apps/?internal_source=main_desktop_bestapp").trust-card-action-button Установить
-  .services
-    .services-content
-      h2 Сервисы и услуги
-      .services-items
-        .service-card
-          .service-card-container
-            .service-card-left-block
-              h3.service-card-header 
-                | Переводы
-                br
-                | и пополнения
-              .service-card-content
-                p С карты на карту или на счёт Тинькофф
-            .service-card-right-block !{transfersIcon}
-          a(href="https://www.tinkoff.ru/cardtocard/").service-card-action Пополнить или перевести
-          a(href="https://www.tinkoff.ru/cardtocard/").service-card-stretched-link
-        .service-card
-          .service-card-container
-            .service-card-left-block
-              h3.service-card-header Снятие наличных
-              .service-card-content
-                p 
-                  | В банкоматах Тинькофф без комиссии.
-                  br
-                  | И без карты, если у вас смартфон
-            .service-card-right-block !{withdrawIcon}
-          a(href="https://www.tinkoff.ru/maps/atm/?partner=tcs").service-card-action Найти банкомат
-          a(href="https://www.tinkoff.ru/maps/atm/?partner=tcs").service-card-stretched-link
-        .service-card.w100.service-card-mobile-apps
-          div
-            h3.service-card-header Мобильные приложения
-            .service-card-content
-              p Сервисы Тинькофф всегда под рукой
-            a(href="https://www.tinkoff.ru/apps/?pid=tinkoff.ru&c=main_page&af_cost_model=prm.unp").service-card-action Смотреть
-            a(href="https://www.tinkoff.ru/apps/?pid=tinkoff.ru&c=main_page&af_cost_model=prm.unp").service-card-stretched-link
-  .interesting
-    .interesting-content
-      h2 Может быть интересно
-      .interesting-items
-        .interesting-card.interesting-card-jobs
-          .interesting-card-container
-            h3.interesting-card-header Тинькофф вакансии
-            .interesting-card-content
-              p Работа мечты
-          a(href="https://www.tinkoff.ru/career/?internal_source=main_tinkoff").interesting-card-action Подробнее
-          a(href="https://www.tinkoff.ru/career/?internal_source=main_tinkoff").interesting-card-stretched-link
-        .interesting-card.interesting-card-education
-          .interesting-card-container
-            h3.interesting-card-header 
-              | Тинькофф 
-              br
-              | Образование
-            .interesting-card-content
-              p Инвестируйте в себя
-          a(href="https://fintech.tinkoff.ru/?internal_source=main_tinkoff&_ga=2.23808755.810188987.1633503903-1986941792.1633503903").interesting-card-action Подробнее
-          a(href="https://fintech.tinkoff.ru/?internal_source=main_tinkoff&_ga=2.23808755.810188987.1633503903-1986941792.1633503903").interesting-card-stretched-link
-        .interesting-card.interesting-card-magazine
-          .interesting-card-container
-            h3.interesting-card-header Тинькофф журнал
-            .interesting-card-content
-              p Популярные статьи
-          a(href="https://journal.tinkoff.ru/?internal_source=main_tinkoff&_ga=2.28135157.810188987.1633503903-1986941792.1633503903").interesting-card-action Подробнее
-          a(href="https://journal.tinkoff.ru/?internal_source=main_tinkoff&_ga=2.28135157.810188987.1633503903-1986941792.1633503903").interesting-card-stretched-link
-        .interesting-card.interesting-card-all-products
-          .interesting-card-container
-            h3.interesting-card-header 
-              | Все продукты
-              br
-              | Тинькофф
-            .interesting-card-content
-              p Экосистема всех продуктов
-          a(href="https://www.tinkoff.ru/new-product/?internal_source=main_tinkoff").interesting-card-action Подробнее
-          a(href="https://www.tinkoff.ru/new-product/?internal_source=main_tinkoff").interesting-card-stretched-link
-            
-          
+  include main/products.pug
+  include main/trust.pug
+  include main/services.pug
+  include main/interesting.pug
+  include main/feedback.pug
+

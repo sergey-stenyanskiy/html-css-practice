@@ -1,15 +1,14 @@
-- var vkLogo = require("!!svg-inline-loader!../asset/vk-svgrepo-com.svg")
-//- - var fbLogo = require("!!svg-inline-loader!../asset/facebook-social-logo-svgrepo-com.svg")
-- var fbLogo = require("!!svg-inline-loader!../asset/fb.svg")
-- var okLogo = require("!!svg-inline-loader!../asset/odnoklassniki-logo-svgrepo-com.svg")
-- var tgLogo = require("!!svg-inline-loader!../asset/telegram-svgrepo-com.svg");
-- var ytLogo = require("!!svg-inline-loader!../asset/youtube-svgrepo-com.svg")
-- var igLogo = require("!!svg-inline-loader!../asset/instagram-svgrepo-com.svg")
-- var twLogo = require("!!svg-inline-loader!../asset/twitter-svgrepo-com.svg")
-- var uk = require("!!svg-inline-loader!../asset/uk.svg")
+- var vkLogo = require("!!svg-inline-loader!../../asset/vk-svgrepo-com.svg")
+- var fbLogo = require("!!svg-inline-loader!../../asset/fb.svg")
+- var okLogo = require("!!svg-inline-loader!../../asset/odnoklassniki-logo-svgrepo-com.svg")
+- var tgLogo = require("!!svg-inline-loader!../../asset/telegram-svgrepo-com.svg");
+- var ytLogo = require("!!svg-inline-loader!../../asset/youtube-svgrepo-com.svg")
+- var igLogo = require("!!svg-inline-loader!../../asset/instagram-svgrepo-com.svg")
+- var twLogo = require("!!svg-inline-loader!../../asset/twitter-svgrepo-com.svg")
+- var uk = require("!!svg-inline-loader!../../asset/uk.svg")
 
-hr.divider
 footer
+  hr.divider
   .footer-upper
     .tinkoff
       a(href="https://www.tinkoff.ru/") Тинькофф
@@ -41,17 +40,17 @@ footer
     .footer-rest-container
       ul.services-more
         li
-          include services-bank.pug
+          include footer/services-list-bank.pug
         li
-          include services-business.pug
+          include footer/services-list-business.pug
         li
-          include services-invest.pug
+          include footer/services-list-invest.pug
         li
-          include services-insurance.pug
+          include footer/services-list-insurance.pug
         li
-          include services-travel.pug
+          include footer/services-list-travel.pug
         li
-          include services-entertainment.pug
+          include footer/services-list-entertainment.pug
       .info
         h4 Информация
         ul.info-sources

@@ -1,8 +1,3 @@
-:root {
-  --blue-grey: #ECF1F7;
-  --blue-grey-darker: #E4EBF3;
-}
-
 .product-card {
   position: relative;
   width: var(--product-card-width);
@@ -14,7 +9,6 @@
 .product-card:nth-child(3n) {
   margin-right: 0;
 }
-
 
 .product-card a {
   text-decoration: none;
@@ -28,11 +22,10 @@
 .product-card-header {
   margin: 20px 0;
   font-weight: normal;
+  font-size: 1.35em;
 
-  // color: black;
   transition: color 0.2s ease-in;
 }
-
 
 .product-card:hover .product-card-header {
   color: var(--navy-blue);
@@ -42,7 +35,6 @@
   line-height: 1.65em;
   font-size: 0.85em;
   margin: 20px 0;
-  // height: 45px;
 }
 
 .product-card-action-button {

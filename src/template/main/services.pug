@@ -1,0 +1,37 @@
+- var transfersIcon = require("!!svg-inline-loader!../../../asset/tinkoff-transfers.svg")
+- var withdrawIcon = require("!!svg-inline-loader!../../../asset/tinkoff-withdraw.svg")
+.services
+  .services-content
+    h2 Сервисы и услуги
+    .services-items
+      .service-card
+        .service-card-container
+          .service-card-left-block
+            h3.service-card-header 
+              | Переводы
+              br
+              | и пополнения
+            .service-card-content
+              p С карты на карту или на счёт Тинькофф
+          .service-card-right-block !{transfersIcon}
+        a(href="https://www.tinkoff.ru/cardtocard/").service-card-action Пополнить или перевести
+        a(href="https://www.tinkoff.ru/cardtocard/").service-card-stretched-link
+      .service-card
+        .service-card-container
+          .service-card-left-block
+            h3.service-card-header Снятие наличных
+            .service-card-content
+              p 
+                | В банкоматах Тинькофф без комиссии.
+                br
+                | И без карты, если у вас смартфон
+          .service-card-right-block !{withdrawIcon}
+        a(href="https://www.tinkoff.ru/maps/atm/?partner=tcs").service-card-action Найти банкомат
+        a(href="https://www.tinkoff.ru/maps/atm/?partner=tcs").service-card-stretched-link
+      .service-card.w100.service-card-mobile-apps
+        div
+          h3.service-card-header Мобильные приложения
+          .service-card-content
+            p Сервисы Тинькофф всегда под рукой
+          a(href="https://www.tinkoff.ru/apps/?pid=tinkoff.ru&c=main_page&af_cost_model=prm.unp").service-card-action Смотреть
+          a(href="https://www.tinkoff.ru/apps/?pid=tinkoff.ru&c=main_page&af_cost_model=prm.unp").service-card-stretched-link

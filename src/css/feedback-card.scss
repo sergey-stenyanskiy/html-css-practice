@@ -1,12 +1,9 @@
-.interesting-card {
+.feedback-card {
   position: relative;
-  width: var(--interesting-card-width);
-  margin-right: var(--interesting-card-margin);
 
-  margin-top: 48px;
   padding: 32px;
+  margin-top: 48px;
 
-  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,11 +14,7 @@
   background-size: contain;
 }
 
-.interesting-card:nth-child(2n) {
-  margin-right: 0;
-}
-
-.interesting-card-header {
+.feedback-card-header {
   margin: 20px 0;
   font-weight: normal;
   margin-top: 0;
@@ -30,39 +23,23 @@
   transition: color 0.2s ease-in;
 }
 
-.interesting-card:hover .interesting-card-header {
-  color: var(--navy-blue);
-}
-
-.interesting-card-content p {
+.feedback-card-content p {
   line-height: 1.65em;
   font-size: 0.85em;
   margin: 20px 0;
   height: 45px;
+  width: 40%;
 }
 
-.interesting-card-action {
+.feedback-card-action {
   margin-top: 40px;
   text-decoration: none;
   font-size: 0.85em;
   
   color: var(--navy-blue);
   transition: color 0.2s ease-in;
-
-  position: relative;
-  z-index: 200;
 }
 
-.interesting-card-action:hover {
+.feedback-card-action:hover {
   color: var(--marine-blue);
-}
-
-.interesting-card-stretched-link {
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
 }

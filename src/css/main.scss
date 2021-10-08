@@ -28,20 +28,23 @@ main {
 @import "./trust-card.scss";
 @import "./service-card.scss";
 @import "./interesting-card.scss";
+@import "./feedback-card.scss";
 
 .splash {
   display: block;
   text-decoration: none;
   color: var(--darkest-grey);
 
-  background: #F5F5F6;
+  background: linear-gradient(rgba(0,0,0,0.08) 0%, var(--tinkoff-grey) 10%);
 }
 
 
 .splash-content {
-  background: url("../asset/tinkoff-splash.png") no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.045) 0%, transparent 10%), url("../../asset/tinkoff-splash.png");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position-x: right;
+
   height: 480px;
 
   width: 1080px;
@@ -70,7 +73,7 @@ main {
 
 .offer-button {
   display: inline-block;
-  background: #FFDD2D;
+  background: var(--gold);
   color: var(--darkest-grey);
   padding: 18px 28px;
   border-radius: 4px;
@@ -80,26 +83,35 @@ main {
 }
 
 .offer-button:hover {
-  background: #FCC521;
+  background: var(--dark-gold);
 }
 
-.content {
+.products, .services, .trust, .interesting, .feedback {
+  padding: 48px 0;
+}
+
+.products h2, .services h2, .trust h2, .interesting h2, .feedback h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.products-content {
   width: 1080px;
   margin: auto;
 }
 
-.products-items, .trust-items, .services-items, .interesting-items {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: start;
-}
-
 .services {
-  background: #F5F5F6;
+  background: var(--tinkoff-grey);
 }
 
 .services-content {
+  width: 1080px;
+  margin: auto;
+}
+
+.trust-content {
   width: 1080px;
   margin: auto;
 }
@@ -109,24 +121,44 @@ main {
   margin: auto;
 }
 
-// .service-card-mobile-apps {
-//   // background: url("/./src/asset/tinkoff-mobile-apps.png") white;
-//   background-image: url("../asset/tinkoff-mobile-apps.png");
-//   background-color: white;
-// }
+.feedback-content {
+  width: 1080px;
+  margin: auto;
+}
 
-// .interesting-card-jobs {
-//   background-image: url("../asset/tinkoff-jobs.png");
-// }
+.feedback-heading {
+  text-align: center;
+}
 
-// .interesting-card-education {
-//   background-image: url("../asset/tinkoff-education.png");
-// }
+.products-items, .trust-items, .services-items, .interesting-items, .feedback-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+}
 
-// .interesting-card-magazine {
-//   background-image: url("../asset/tinkoff-magazine.png");
-// }
+.service-card-mobile-apps {
+  background-image: url("../../asset/tinkoff-mobile-apps.png");
+  background-color: white;
+  background-position-y: -32px;
+}
 
-// .interesting-card-all-products {
-//   background-image: url("../asset/tinkoff-all-products.png") ;
-// }
+.interesting-card-jobs {
+  background-image: url("../../asset/tinkoff-jobs.png");
+}
+
+.interesting-card-education {
+  background-image: url("../../asset/tinkoff-education.png");
+}
+
+.interesting-card-magazine {
+  background-image: url("../../asset/tinkoff-magazine.png");
+}
+
+.interesting-card-all-products {
+  background-image: url("../../asset/tinkoff-all-products.png");
+}
+
+.feedback-card {
+  background-image: url("../../asset/tinkoff-feedback.png");
+}
