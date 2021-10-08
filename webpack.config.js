@@ -75,7 +75,7 @@ module.exports = {
         use: "pug-loader",
       },
       {
-        test: /\.(png|jpe?g|gif|webp)$/i,
+        test: /\.(png|jpe?g|gif|webp|woff|woff2)$/i,
         use: {
           loader: "file-loader",
           options: {

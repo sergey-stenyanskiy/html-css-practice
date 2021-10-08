@@ -4,7 +4,6 @@
   
 
 nav {
-  font-size: 0.82em;
   width: 1080px;
   margin: auto;
 }
@@ -41,8 +40,7 @@ nav {
   content: " ";
   display: block;
   width: 100%;
-  // background-color: var(--lighter-grey);
-  background-color: rgba(0,0,0,0.1);
+  background-color: var(--extralight-grey);
   
   transition: all 0.2s ease-in;
   height: 0px;

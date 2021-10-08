@@ -13,9 +13,24 @@
   --blue-grey-darker: #E4EBF3;
 }
 
+@font-face {
+  font-family: 'Tinkoff Sans';
+  src: url("!!file-loader!../../asset/TinkoffSans.woff2");
+}
+
+
+@font-face {
+  font-family: 'Neue Haas';
+  src: url("!!file-loader!../../asset/NeueHaasUnicaW1G-Regular.woff2");
+}
+
 html {
-  font-size: 16px;
-  font-family: arial, sans-serif;
+  font-size: 15px;
+  font-family: 'Neue Haas';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Tinkoff Sans"
 }
 
 body {
