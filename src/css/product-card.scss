@@ -1,4 +1,8 @@
 .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   position: relative;
   width: var(--product-card-width);
   margin-right: var(--product-card-margin);
@@ -15,8 +19,9 @@
 }
 
 .product-card-image {
-  display: block;
-  width: 100%;
+  height: 240px;
+  background-position: center;
+  background-size: cover;
 }
 
 .product-card-header {
@@ -41,10 +46,10 @@
   padding: 12px 20px;
   border-radius: 4px;
   color: var(--navy-blue);
+  
+  transition: background-color 0.2s ease-in;
   background-color: var(--blue-grey);
   
-  transition: all 0.2s ease-in;
-
   position: relative;
   z-index: 200;
 }

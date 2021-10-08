@@ -1,28 +1,84 @@
+
+@media screen and (min-width: 1340px) {
+  main {
+    --container-width: 1080px;
+    
+    --product-card-margin: 48px;
+    --trust-card-margin: 48px;
+    // --service-card-margin: 48px;
+    --interesting-card-margin: 48px;
+  }
+
+  // .splash-content {
+  //   background-position-x: -200px;
+  // }
+
+  .feedback-card {
+    background-position-x: right;
+  }
+
+  .feedback-card-action {
+    margin-top: 40px;
+  }
+  
+  .feedback-card-content p {
+    width: 49%;
+  }
+
+  .splash-image {
+    left: 0;
+    background-position-x: -250px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1340px) {
+  main {
+    --container-width: 800px;
+
+    --product-card-margin: 48px;
+    --trust-card-margin: 48px;
+    // --service-card-margin: 48px;
+    --interesting-card-margin: 48px;
+  }
+
+  // .splash-content {
+  //   background-position-x: -500px;
+  // }
+
+  .feedback-card {
+    background-position: bottom 0px right -60px;
+  }
+
+  .feedback-card-action {
+    margin-top: 0;
+  }
+
+  .feedback-card-content p {
+    width: 43%;
+  }
+  
+  .splash-image {
+    left: -112px;
+    background-position-x: -250px;
+  }
+}
+
 $product-card-count: 3;
 $trust-card-count: 2;
-$service-card-count: 2;
+// $service-card-count: 2;
 $interesting-card-count: 2;
 
 main {
-  --container-width: 1080px;
-  --product-card-margin: 48px;
   --product-card-width: calc((var(--container-width) - #{$product-card-count - 1} * var(--product-card-margin)) / #{$product-card-count});
-  
-  --trust-card-margin: 48px;
   --trust-card-width: calc((var(--container-width) - #{$trust-card-count - 1} * var(--trust-card-margin)) / #{$trust-card-count});
-  
-  --service-card-margin: 48px;
-  --service-card-width: calc((var(--container-width) - #{$service-card-count - 1} * var(--service-card-margin)) / #{$service-card-count});
-  
-  --interesting-card-margin: 48px;
+  // --service-card-width: calc((var(--container-width) - #{$service-card-count - 1} * var(--service-card-margin)) / #{$service-card-count});
   --interesting-card-width: calc((var(--container-width) - #{$interesting-card-count - 1} * var(--interesting-card-margin)) / #{$interesting-card-count});
 }
 
 main {
   color: var(--darkest-grey);
 }
-
-
 
 @import "./product-card.scss";
 @import "./trust-card.scss";
@@ -36,8 +92,32 @@ main {
   text-decoration: none;
   color: var(--darkest-grey);
 
-  background: var(--tinkoff-grey);
+  background-color: var(--tinkoff-grey);
+  // background-color: transparent;
+
+  // background-image: url("../../asset/tinkoff-splash.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
 }
+
+.splash-image {
+  background-image: url("../../asset/tinkoff-splash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1024px;
+  // left: 0;
+  // margin: auto;
+  // left: -20px;
+  // left: -20px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+
+  z-index: 1;
+}
+
+// @media screen and (min-width: )
 
 a.splash-stretched-link {
   position: absolute;
@@ -49,7 +129,6 @@ a.splash-stretched-link {
 }
 
 .splash-gradient-backdrop {
-  // background: linear-gradient(rgba(0,0,0,0.08) 0%, var(--tinkoff-grey) 10%);
   background: linear-gradient(rgba(0,0,0,0.08) 0%, transparent 10%);
   position: absolute;
   top: 0;
@@ -60,21 +139,23 @@ a.splash-stretched-link {
 }
 
 .splash-content {
-  // background: linear-gradient(rgba(0,0,0,0.045) 0%, transparent 10%), url("../../asset/tinkoff-splash.png");
-  background: url("../../asset/tinkoff-splash.png");
+  // background-image: url("../../asset/tinkoff-splash.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: -200px;
+  position: relative;
 
   height: 480px;
 
-  width: 1080px;
+  width: var(--container-width);
   margin: auto;
   padding: 16px 0;
 }
 
 .offer {
+  position: relative;
+  z-index: 2;
+
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -91,7 +172,6 @@ a.splash-stretched-link {
 .offer-text {
   margin-bottom: 200px;
   line-height: 1.65em;
-  font-size: 1.15em;
 }
 
 .offer-button {
@@ -100,27 +180,26 @@ a.splash-stretched-link {
   position: relative;
   z-index: 200;
   display: inline-block;
-  background: var(--gold);
-  font-size: 1.15em;
+  font-size: 1em;
   color: var(--darkest-grey);
-
+  
   border-radius: 4px;
   margin-bottom: 48px;
   padding: 0;
-
-  transition: all 0.2s ease-in;
+  
+  transition: background-color 0.2s ease-in;
+  background-color: var(--gold);
 }
 
 .offer-button a {
-  padding: 18px 28px;
+  padding: 20px 32px;
   display: block;
   text-decoration: none;
   color: var(--darkest-grey);
-  // font-size: inherit;
 }
 
 .offer-button:hover {
-  background: var(--dark-gold);
+  background-color: var(--dark-gold);
 }
 
 .products, .services, .trust, .interesting, .feedback {
@@ -134,8 +213,8 @@ section .heading {
   font-size: 2.5em;
 }
 
-.products-content {
-  width: 1080px;
+.products-content, .services-content, .trust-content, .interesting-content, .feedback-content {
+  width: var(--container-width);
   margin: auto;
 }
 
@@ -143,24 +222,12 @@ section .heading {
   background: var(--tinkoff-grey);
 }
 
-.services-content {
-  width: 1080px;
-  margin: auto;
+.service-card-transfers {
+  margin-right: 48px;
 }
 
-.trust-content {
-  width: 1080px;
-  margin: auto;
-}
-
-.interesting-content {
-  width: 1080px;
-  margin: auto;
-}
-
-.feedback-content {
-  width: 1080px;
-  margin: auto;
+.service-card-transfers, .service-card-withdraw {
+  flex-grow: 1;
 }
 
 .feedback-heading {
@@ -172,6 +239,38 @@ section .heading {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: start;
+}
+
+.product-card-casco .product-card-image {
+  background-image: url("../../asset/tinkoff-casco.png");
+}
+
+.product-card-osago .product-card-image {
+  background-image: url("../../asset/tinkoff-osago.png");
+}
+
+.product-card-business .product-card-image {
+  background-image: url("../../asset/tinkoff-business.png");
+}
+
+.product-card-credit .product-card-image {
+  background-image: url("../../asset/tinkoff-credit.png");
+}
+
+.product-card-our-best-cards .product-card-image {
+  background-image: url("../../asset/tinkoff-our-best-cards.png");
+}
+
+.product-card-invest .product-card-image {
+  background-image: url("../../asset/tinkoff-invest.png");
+}
+
+.trust-card-3rd .trust-card-image {
+  background-image: url("../../asset/tinkoff-3rd.png");
+}
+
+.trust-card-best-worldwide .trust-card-image {
+  background-image: url("../../asset/tinkoff-best-worldwide.png");
 }
 
 .service-card-mobile-apps {

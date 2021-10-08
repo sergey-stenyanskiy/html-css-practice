@@ -10,7 +10,6 @@
   
   background-color: var(--tinkoff-grey);
   background-repeat: no-repeat;
-  background-position-x: right;
   background-size: contain;
 }
 
@@ -27,11 +26,11 @@
   line-height: 1.65em;
   font-family: arial, sans-serif;
   margin: 20px 0;
-  width: 44%;
+  // width: 49%;
 }
 
 .feedback-card-action {
-  margin-top: 40px;
+  // margin-top: 40px;
   text-decoration: none;
   
   color: var(--navy-blue);

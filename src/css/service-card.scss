@@ -1,13 +1,14 @@
 .service-card {
   position: relative;
-  width: var(--service-card-width);
-  margin-right: var(--service-card-margin);
+  // width: var(--service-card-width);
+  // margin-right: var(--service-card-margin);
 
   margin-top: 48px;
   
   padding: 32px;
   
-  transition: all 0.2s ease-in;
+  // transition: top, box-shadow, 0.2s ease-in;
+  transition: top, box-shadow, 0.2s ease-in;
   top: 0;
   box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
   

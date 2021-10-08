@@ -5,7 +5,14 @@
 
   margin-top: 48px;
   color: var(--darkest-grey);
-  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 32px;
+
+  background: var(--tinkoff-grey);
 }
 
 .trust-card:nth-child(2n) {
@@ -17,15 +24,21 @@
 }
 
 .trust-card-image {
-  display: block;
-  width: 100%;
-  background: var(--dark-grey);
+  margin-top: -32px;
+  margin-left: -32px;
+  margin-right: -32px;
+  
+  height: 240px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  background-color: var(--dark-grey);
 }
 
 .trust-card-header {
   margin: 20px 0;
   font-weight: normal;
-  margin-top: 0;
   font-size: 1.5em;
 
   color: var(--darkest-grey);
@@ -33,14 +46,12 @@
 }
 
 .trust-card-content {
-  padding: 32px;
   background: var(--tinkoff-grey);
 }
 
 .trust-card-content p {
   line-height: 1.65em;
   margin: 20px 0;
-  height: 45px;
 }
 
 .trust-card-action-button {
