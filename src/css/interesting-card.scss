@@ -1,20 +1,7 @@
 .interesting-card {
   position: relative;
-  width: var(--interesting-card-width);
-  margin-right: var(--interesting-card-margin);
-
   margin-top: 48px;
-  padding: 32px;
-
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-  background-color: var(--tinkoff-grey);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: contain;
+  flex: 0 0 50%;
 }
 
 .interesting-card:nth-child(2n) {
@@ -30,7 +17,23 @@
   transition: color 0.2s ease-in;
 }
 
-.interesting-card:hover .interesting-card-header {
+.interesting-card-container {
+  position: relative;
+  padding: 32px;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  background-color: var(--tinkoff-grey);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: contain;
+}
+
+.interesting-card-container:hover .interesting-card-header {
   color: var(--navy-blue);
 }
 

@@ -2,32 +2,26 @@
 @media screen and (min-width: 1340px) {
   main {
     --container-width: 1080px;
-    
-    --product-card-margin: 48px;
-    --trust-card-margin: 48px;
-    // --service-card-margin: 48px;
-    --interesting-card-margin: 48px;
-  }
-
-  // .splash-content {
-  //   background-position-x: -200px;
-  // }
-
-  .feedback-card {
-    background-position-x: right;
-  }
-
-  .feedback-card-action {
-    margin-top: 40px;
-  }
-  
-  .feedback-card-content p {
-    width: 49%;
   }
 
   .splash-image {
-    left: 0;
-    background-position-x: -250px;
+    width: 1360px;
+    height: 480px;
+    // margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    // background-position-x: -250px;
+  }
+
+  .splash-content {
+    height: 480px;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    --container-width: 800px;
   }
 
 }
@@ -35,46 +29,25 @@
 @media screen and (min-width: 1024px) and (max-width: 1340px) {
   main {
     --container-width: 800px;
-
-    --product-card-margin: 48px;
-    --trust-card-margin: 48px;
-    // --service-card-margin: 48px;
-    --interesting-card-margin: 48px;
-  }
-
-  // .splash-content {
-  //   background-position-x: -500px;
-  // }
-
-  .feedback-card {
-    background-position: bottom 0px right -60px;
-  }
-
-  .feedback-card-action {
-    margin-top: 0;
-  }
-
-  .feedback-card-content p {
-    width: 43%;
   }
   
   .splash-image {
-    left: -112px;
-    background-position-x: -250px;
+    width: 1024px;
+    height: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    // background-size: contain;
+    // overflow: hidden;
+
+    // left: -112px;
+    // background-position-x: -250px;
+  }
+
+  .splash-content {
+    height: 448px;
   }
 }
 
-$product-card-count: 3;
-$trust-card-count: 2;
-// $service-card-count: 2;
-$interesting-card-count: 2;
-
-main {
-  --product-card-width: calc((var(--container-width) - #{$product-card-count - 1} * var(--product-card-margin)) / #{$product-card-count});
-  --trust-card-width: calc((var(--container-width) - #{$trust-card-count - 1} * var(--trust-card-margin)) / #{$trust-card-count});
-  // --service-card-width: calc((var(--container-width) - #{$service-card-count - 1} * var(--service-card-margin)) / #{$service-card-count});
-  --interesting-card-width: calc((var(--container-width) - #{$interesting-card-count - 1} * var(--interesting-card-margin)) / #{$interesting-card-count});
-}
 
 main {
   color: var(--darkest-grey);
@@ -93,31 +66,23 @@ main {
   color: var(--darkest-grey);
 
   background-color: var(--tinkoff-grey);
-  // background-color: transparent;
-
-  // background-image: url("../../asset/tinkoff-splash.png");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-
 }
 
 .splash-image {
+  // display: block;
   background-image: url("../../asset/tinkoff-splash.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 1024px;
-  // left: 0;
-  // margin: auto;
-  // left: -20px;
-  // left: -20px;
-  top: 0;
-  bottom: 0;
+  background-size: contain;
+  // width: 1340px;
+  // height: 448px;
+  left: 0;
+  right: 0;
+  // top: 0;
+  // bottom: 0;
   position: absolute;
 
   z-index: 1;
 }
-
-// @media screen and (min-width: )
 
 a.splash-stretched-link {
   position: absolute;
@@ -133,19 +98,17 @@ a.splash-stretched-link {
   position: absolute;
   top: 0;
   bottom: 0;
+  
   left: 0;
   right: 0;
   z-index: 50;
 }
 
 .splash-content {
-  // background-image: url("../../asset/tinkoff-splash.png");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-
   position: relative;
 
-  height: 480px;
+  // height: 448px;
+  // height: 480px;
 
   width: var(--container-width);
   margin: auto;
@@ -166,7 +129,7 @@ a.splash-stretched-link {
 .offer h1 {
   margin: 28px 0;
   font-weight: normal;
-  font-size: 44px;
+  font-size: 36px;
 }
 
 .offer-text {
@@ -184,7 +147,7 @@ a.splash-stretched-link {
   color: var(--darkest-grey);
   
   border-radius: 4px;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
   padding: 0;
   
   transition: background-color 0.2s ease-in;
@@ -213,31 +176,81 @@ section .heading {
   font-size: 2.5em;
 }
 
-.products-content, .services-content, .trust-content, .interesting-content, .feedback-content {
-  width: var(--container-width);
-  margin: auto;
-}
-
 .services {
   background: var(--tinkoff-grey);
-}
-
-.service-card-transfers {
-  margin-right: 48px;
-}
-
-.service-card-transfers, .service-card-withdraw {
-  flex-grow: 1;
 }
 
 .feedback-heading {
   text-align: center;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.products-content, .trust-content, .services-content, .interesting-content, .feedback-content  {
+  padding: 0 16px;
+}
+
+.product-card {
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 800px) {
+  .products-content, .trust-content, .services-content, .interesting-content, .feedback-content {
+    width: var(--container-width);
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .products-content, .trust-content, .services-content, .interesting-content .feedback-content {
+    width: var(--container-width);
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product-card, .trust-card, .service-card, .interesting-card, .feedback-card {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .products-items, .trust-items, .services-items, .interesting-items, .feedback-items {
+    margin-right: -8px; 
+    margin-left: -8px; 
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1340px) {
+  .product-card, .trust-card, .service-card, .interesting-card, .feedback-card {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .products-items, .trust-items, .services-items, .interesting-items, .feedback-items {
+    margin-right: -20px; 
+    margin-left: -20px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .product-card, .trust-card, .service-card, .interesting-card, .feedback-card {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .products-items, .trust-items, .services-items, .interesting-items, .feedback-items {
+    margin-right: -24px; 
+    margin-left: -24px; 
+  }
+}
+
 .products-items, .trust-items, .services-items, .interesting-items, .feedback-items {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: start;
 }
 
@@ -273,28 +286,81 @@ section .heading {
   background-image: url("../../asset/tinkoff-best-worldwide.png");
 }
 
-.service-card-mobile-apps {
+.service-card-mobile-apps .service-card-container {
   background-image: url("../../asset/tinkoff-mobile-apps.png");
-  background-color: white;
+  background-repeat: no-repeat;
   background-position-y: -32px;
+  
 }
 
-.interesting-card-jobs {
+@media screen and (max-width: 1340px) {
+  .service-card-mobile-apps .service-card-container {
+    background-position-x: 300px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .service-card-mobile-apps .service-card-container {
+    background-position-x: 600px;
+  }
+}
+
+.interesting-card-jobs .interesting-card-container {
   background-image: url("../../asset/tinkoff-jobs.png");
 }
 
-.interesting-card-education {
+.interesting-card-education .interesting-card-container {
   background-image: url("../../asset/tinkoff-education.png");
 }
 
-.interesting-card-magazine {
+.interesting-card-magazine .interesting-card-container {
   background-image: url("../../asset/tinkoff-magazine.png");
 }
 
-.interesting-card-all-products {
+.interesting-card-all-products .interesting-card-container {
   background-image: url("../../asset/tinkoff-all-products.png");
 }
 
-.feedback-card {
+.feedback-card .feedback-card-container {
   background-image: url("../../asset/tinkoff-feedback.png");
+  background-size: contain;
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback-card-content {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1340px) {
+  .feedback-card {
+    background-position: bottom 0px right -60px;
+  }
+
+  .feedback-card-content {
+    width: 43%;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .feedback-card-content {
+    width: 60%;
+  }
+
+  .feedback-card-action-container {
+    margin-top: 40px;
+  }
+}
+
+
+@media screen and (max-width: 1340px) {
+  .feedback-card .feedback-card-container {
+    background-position-x: 300px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .feedback-card .feedback-card-container {
+    background-position-x: 580px;
+  }
 }
