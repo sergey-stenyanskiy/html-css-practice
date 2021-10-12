@@ -2,7 +2,7 @@ dist
 node_modules
 public
 .env
-asset
-assets
-src/asset
-src/assets
+# asset
+# assets
+# src/asset
+# src/assets
