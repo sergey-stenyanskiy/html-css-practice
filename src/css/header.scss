@@ -2,9 +2,14 @@
   --menu-line-height: 60px;
 }
   
+header {
+  padding: 0 48px;
+  min-width: 900px;
+}
 
 nav {
-  width: 1080px;
+  width: 100%;
+  max-width: 1080px;
   margin: auto;
 }
 
@@ -89,6 +94,11 @@ nav {
   visibility: hidden;
 }
 
+.menu-more .dropdown, .submenu-more .dropdown {
+  right: 0;
+  top: 45px;
+}
+
 .dropdown-content {
   padding: 8px 0;
   border: 1px solid var(--extralight-grey);
@@ -98,6 +108,8 @@ nav {
   
   box-shadow: 0px 10px 16px rgba(0,0,0,0.15);
 }
+
+
 
 .dropdown .transparent-block {
   height: 8px;
@@ -126,10 +138,77 @@ nav {
   color: #2670CF;
 }
 
+
+.menu-more-travel, .menu-more-entertainment {
+  display: none;
+}
+
+@media screen and (min-width: 1080px) {
+  .menu-more {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-travel {
+    display: none;
+  }
+
+  .menu-more-travel {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .menu-entertainment {
+    display: none;
+  }
+
+  .menu-more-entertainment {
+    display: block;
+  }
+}
+
+
+
+.submenu-more-refinance, .submenu-more-auto-loan {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  .submenu-more {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .submenu-auto-loan {
+    display: none;
+  }
+
+  .submenu-more-auto-loan {
+    display: block;
+  }
+}
+
+.menu-more .dropdown-item a {
+  width: 110px;
+}
+
+.submenu-more .dropdown-item a {
+  width: 96px;
+}
+
 .menu-item:hover .dropdown {
   visibility: visible;
   opacity: 1;
   top: 62px;
+}
+
+.menu-item.menu-more:hover .dropdown, .menu-item.submenu-more:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  top: 35px;
 }
 
 .menu-item svg {

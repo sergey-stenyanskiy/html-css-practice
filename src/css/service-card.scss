@@ -4,6 +4,19 @@
   flex: 0 0 50%;
 }
 
+
+// @media screen and (min-width: 520px) {
+//   .service-card {
+//     flex: 0 0 50%;
+//   }
+// }
+
+// @media screen and (max-width: 520px) {
+//   .service-card {
+//     flex: 0 0 100%;
+//   }
+// }
+
 .service-card-container {
   height: 100%;
 
@@ -36,20 +49,19 @@
 .service-card-content-container {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  justify-content: space-between;
 }
 
 .w100 .service-card-content-container {
   display: block;
 }
 
-.service-card-left-block {
-  flex-basis: 85%;
+.service-card-right-block {
+  width: 55px;
 }
 
-.service-card-right-block {
-  margin-left: 2%;
-  flex-basis: 13%;
+.service-card-right-block svg {
+  width: 55px;
 }
 
 .service-card-header {
@@ -62,7 +74,6 @@
 .service-card-content p {
   line-height: 1.65em;
   margin: 20px 0;
-  height: 45px;
 }
 
 .service-card-action {
@@ -87,4 +98,12 @@
   left: 0;
   right: 0;
   z-index: 100;
+}
+
+.service-card-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

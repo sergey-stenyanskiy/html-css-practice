@@ -1,25 +1,27 @@
 .trust-card {
   margin-top: 48px;
   color: var(--darkest-grey);
+
+  flex: 0 0 50%;
 }
 
-.trust-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+// .trust-card {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+// }
 
-@media screen and (max-width: 540px) {
-  .trust-card {
-    flex: 0 0 100%;
-  }
-}
+// @media screen and (max-width: 540px) {
+//   .trust-card {
+//     flex: 0 0 100%;
+//   }
+// }
 
-@media screen and (min-width: 540px) {
-  .trust-card {
-    flex: 0 0 50%;
-  }
-}
+// @media screen and (min-width: 540px) {
+//   .trust-card {
+//     flex: 0 0 50%;
+//   }
+// }
 
 .trust-card-container {
   height: 100%;

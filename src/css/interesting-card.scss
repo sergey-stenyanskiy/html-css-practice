@@ -1,8 +1,22 @@
 .interesting-card {
   position: relative;
   margin-top: 48px;
+
   flex: 0 0 50%;
 }
+
+
+// @media screen and (min-width: 480px) {
+//   .interesting-card {
+//     flex: 0 0 50%;
+//   }
+// }
+
+// @media screen and (max-width: 480px) {
+//   .interesting-card {
+//     flex: 0 0 100%;
+//   }
+// }
 
 .interesting-card:nth-child(2n) {
   margin-right: 0;
