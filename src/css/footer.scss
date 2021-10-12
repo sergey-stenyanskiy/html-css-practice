@@ -1,6 +1,8 @@
 footer {
   color: var(--lighter-grey);
   margin-top: 72px;
+
+  font-size: 0.85em;
 }
 
 footer a {
@@ -11,11 +13,6 @@ footer a {
   width: var(--container-width);
   margin: auto;
 }
-
-// .footer-upper {
-//   width: 1080px;
-//   margin: auto;
-// }
 
 .tinkoff {
   margin-top: 24px;
@@ -33,7 +30,7 @@ footer a {
 
 .telno {
   color: black;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-family: "Tinkoff Sans";
 }
 
@@ -44,7 +41,7 @@ footer a {
   align-items:flex-start;
   margin-bottom: 16px;
 
-  font-size: 0.85em;
+  // font-size: 0.85em;
 }
 
 .about > span {
@@ -76,7 +73,14 @@ footer a {
   background-position: center;
   background-color: var(--tinkoff-grey);
 
-  font-size: 0.85em;
+  // font-size: 0.85em;
+
+  padding: 0 48px;
+}
+
+.footer-rest-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-rest a {
@@ -94,6 +98,8 @@ footer a {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .services-list li {
@@ -115,6 +121,11 @@ footer a {
   color: var(--light-grey);
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
 .info h4 {
   color: var(--lighter-grey);
   margin-top: calc(1.15em + 8px);
@@ -132,6 +143,12 @@ footer a {
   margin: 0;
   margin-bottom: 1.1em;
   padding: 0;
+
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+
+  // font-size: 0.85em;
 }
 
 .info-sources li {
@@ -144,9 +161,18 @@ footer a {
   margin-right: 0;
 }
 
+.info-misc {
+  display: flex;
+  flex-direction: column;
+}
+
 .info-misc p {
   line-height: 1.35em;
   margin: 1.25em 0;
+}
+
+.info-misc p:last-child {
+  margin-top: 0px;
 }
 
 .social-media li {
