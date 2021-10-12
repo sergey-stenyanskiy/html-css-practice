@@ -54,12 +54,15 @@ main {
   color: var(--darkest-grey);
 
   background-color: var(--tinkoff-grey);
+
+  overflow-x: hidden;
 }
 
 .splash-image {
   background-image: url("../../asset/tinkoff-splash.png");
   background-repeat: no-repeat;
   background-size: contain;
+  top: 0;
   left: 0;
   right: 0;
   position: absolute;
