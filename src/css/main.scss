@@ -92,10 +92,13 @@ a.splash-stretched-link {
 
 .splash-content {
   position: relative;
+  z-index: 100;
 
   width: var(--container-width);
   margin: auto;
   padding: 16px 0;
+
+  
 }
 
 .offer {
@@ -124,7 +127,7 @@ a.splash-stretched-link {
   border: none;
   outline: none;
   position: relative;
-  z-index: 200;
+  // z-index: 300;
   display: inline-block;
   font-size: 1em;
   color: var(--darkest-grey);
