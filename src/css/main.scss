@@ -301,24 +301,20 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
-  .feedback-card-content {
+  .feedback-card-container > div {
     width: 45%;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1340px) {
-  .feedback-card {
-    background-position: bottom 0px right -60px;
-  }
-
-  .feedback-card-content {
+  .feedback-card-container > div {
     width: 43%;
   }
 }
 
 @media screen and (min-width: 1340px) {
-  .feedback-card-content {
-    width: 60%;
+  .feedback-card-container > div {
+    width: 55%;
   }
 
   .feedback-card-action-container {
@@ -329,7 +325,7 @@ main {
 
 @media screen and (max-width: 1340px) {
   .feedback-card .feedback-card-container {
-    background-position-x: 300px;
+    background-position-x: 285px;
   }
 }
 
